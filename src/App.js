@@ -1,25 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Menu from "./Menu";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const siteName = 'LocalCoding';
+    const version = 2;
+    const isPublic = true;
+    const owner = {
+        name:'PASV',
+        zip:'56566',
+        phone:'65-67-88-555'
+
+    }
+
+    const courses = ['JS','React','QA']
+    return (
+        <div>
+            <Menu siteName={siteName} version={version} isPublic={isPublic} owner={owner} courses={courses}/>
+        </div>
+    );
 }
 
 export default App;
