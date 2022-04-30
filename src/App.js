@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Menu from "./Menu";
+import Logo from "./Logo";
 
 function App() {
     const siteName = 'LocalCoding';
@@ -34,6 +35,7 @@ function App() {
         ]
     return (
         <div>
+            <Logo siteName={siteName}/>
             <Menu siteName={siteName} version={version} isPublic={isPublic} owner={owner} courses={courses}/>
         </div>
     );

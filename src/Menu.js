@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from "./Logo";
 
 const Menu = (props) => {
     console.log(props)
@@ -17,6 +18,7 @@ const Menu = (props) => {
                 {props.courses.map(el => (
                     <li key={el.id}>
                     <strong>{el.title}</strong>, Price:${el.price}
+                        <Logo siteName={props.siteName}/>
                         <button onClick={() => buyCourse(el.id)}>Buy</button>
                     </li>
                 ))}
