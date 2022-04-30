@@ -7,6 +7,6 @@ function Logo(props) {
         <div>{siteName}</div>
 
     );
-};
+}
 
 export default Logo;
